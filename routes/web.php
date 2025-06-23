@@ -18,6 +18,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 // Inventory - dilindungi auth
 Route::middleware('auth')->group(function () {
     Route::resource('items', ItemController::class);
+    
     Route::get('items-data', [ItemController::class, 'data'])->name('items.data');
 
     Route::get('items/{item}/history', function (Item $item) {

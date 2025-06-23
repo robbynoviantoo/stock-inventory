@@ -2,6 +2,11 @@
 
 @section('content')
 <div class="container">
+    <div class="container">
+    <x-breadcrumbs :breadcrumbs="[
+    'Data Barang' => route('items.index'),
+    'Create' => route('items.create'),
+]" />
     <h2>Tambah Histori untuk: {{ $item->name }}</h2>
     <div class="section-card">
         <form action="{{ route('item_histories.store') }}" method="POST">

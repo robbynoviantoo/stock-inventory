@@ -2,6 +2,10 @@
 
 @section('content')
 <div class="container">
+    <x-breadcrumbs :breadcrumbs="[
+    'Data Barang' => route('items.index'),
+    'Create' => route('items.create'),
+]" />
     <h2>Tambah Barang</h2>
 
     <div class="section-card">

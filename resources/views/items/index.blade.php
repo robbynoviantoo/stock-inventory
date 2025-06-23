@@ -2,13 +2,16 @@
 
 @section('content')
 <div class="container">
+    <x-breadcrumbs :breadcrumbs="[
+    'Data Barang' => route('items.index'),
+]" />
     <div class="d-flex flex-wrap gap-2 mb-3">
         <a href="{{ route('items.create') }}" class="btn btn-primary">
             ➕ Tambah Barang
         </a>
 
         <a href="{{ route('items.import.page') }}" class="btn btn-secondary">
-            ⬆️ Import 
+            ⬆️ Import
         </a>
 
         <div class="btn-group">

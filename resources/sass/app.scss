@@ -26,3 +26,19 @@ html {
     background-color: #f8f9fa;
     border-right: 1px solid #dee2e6;
 }
+
+.breadcrumb {
+    background-color: transparent;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.breadcrumb-item a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.breadcrumb-item a:hover {
+    text-decoration: underline; 
+    color: #333; 
+}

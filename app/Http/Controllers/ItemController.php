@@ -23,7 +23,7 @@ class ItemController extends Controller
         $items = Item::query();
         return DataTables::of($items)
             ->addColumn('aksi', function ($item) {
-                return '<a href="' . route('items.show', $item) . '" class="btn btn-sm btn-info">Detail</a>';
+                return '<a href="' . route('items.show', ['item' => $item->id]) . '" class="btn btn-sm btn-info">Detail</a>';
             })
             ->rawColumns(['aksi'])
             ->make(true);
