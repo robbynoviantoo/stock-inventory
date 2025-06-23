@@ -6,3 +6,23 @@
 
 // Bootstrap
 @import 'bootstrap/scss/bootstrap';
+
+html {
+    overflow-y: scroll;
+}
+
+.section-card {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 1.5rem;
+}
+
+#sidebar-container {
+    width: 220px;
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    border-right: 1px solid #dee2e6;
+}
