@@ -62,7 +62,8 @@
         $('#items-table').DataTable({
             processing: true,
             serverSide: true,
-            responsive: true, // ini penting untuk responsivitas
+            responsive: true,
+            width: '100%',
             ajax: "{{ route('items.data') }}",
             columns: [{
                     data: 'name',

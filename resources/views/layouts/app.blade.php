@@ -67,7 +67,6 @@
             </div>
         </nav>
 
-        <div class="container-fluid">
             <div class="d-md-flex">
                 @auth
                 <div id="sidebar-container" class="d-none d-md-block">
@@ -75,9 +74,9 @@
                 </div>
                 @endauth
 
-                <div class="flex-fill p-4">
+                <div class="flex-fill pt-3">
                     @auth
-                    <button class="btn btn-outline-secondary mb-3 d-md-none" id="toggleSidebar">☰ Menu</button>
+                    <button class="btn btn-outline-secondary mb-3 d-md-none m-2" id="toggleSidebar">☰ Menu</button>
                     @endauth
 
                     @if (session('success'))
@@ -90,8 +89,6 @@
                     @yield('content')
                 </div>
             </div>
-        </div>
-
 
         @stack('scripts')
         <script>
